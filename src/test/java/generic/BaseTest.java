@@ -42,8 +42,9 @@ public static ExtentReports extent;
 	
 	static
 	{
-		WebDriverManager.chromedriver().setup();
-		WebDriverManager.firefoxdriver().setup();
+		//WebDriverManager.chromedriver().setup();
+		//WebDriverManager.firefoxdriver().setup();
+		System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe"); 
 	}
 	
 	@BeforeSuite
